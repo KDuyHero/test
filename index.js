@@ -18,7 +18,9 @@ app.get("/", (req, res) => {
   res.json("hello world");
 });
 
-app.get("/brands", getAllBrands);
+const Router = require("./src/routes");
+
+Router(app);
 
 connectDB().then(() => {
   app.listen(PORT, () => {
