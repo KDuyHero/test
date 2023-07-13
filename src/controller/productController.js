@@ -1,6 +1,6 @@
 const fs = require("fs");
 const ProductModel = require("../models/ProductModel");
-const { cloudinaryUploadImg } = require("../utils/cloudinary");
+// const { cloudinaryUploadImg } = require("../utils/cloudinary");
 // GET /
 
 const getAllProducts = async (req, res) => {
