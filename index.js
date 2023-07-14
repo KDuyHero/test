@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: process.env.FRONTEND_HOST, credentials: true }));
 
 const PORT = process.env.PORT || 8080;
 const connectDB = async () => {
