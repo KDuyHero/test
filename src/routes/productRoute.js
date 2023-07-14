@@ -13,7 +13,7 @@ const {
 // multer
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "src/public/images/product");
+    cb(null, "/src/public/images/product");
   },
   filename: function (req, file, cb) {
     // imageName: product-time-fileNameUpload
